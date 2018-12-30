@@ -21,5 +21,6 @@ public:
   void stimulate(long time);
   void release(long time);
   bool addConnection(Neuron *);
+  double getPol();
 };
 #endif

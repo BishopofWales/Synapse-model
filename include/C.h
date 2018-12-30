@@ -3,6 +3,7 @@
 //Constants used in more than one class go here.
 class C
 {
-  public:
+public:
+  static const int MAX_GEOM = 100;
 };
 #endif

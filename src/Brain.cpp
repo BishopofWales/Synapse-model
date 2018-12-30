@@ -9,7 +9,6 @@ Brain::Brain()
     for (int i = 0; i < NUM_NEUR; i++)
     {
         Neuron *newNeuron = new Neuron();
-        cout << "new neuron: " << newNeuron << "\n";
         _neurons.at(i) = newNeuron;
     }
     //Next we randomly assign connections
@@ -22,4 +21,12 @@ Brain::Brain()
             _neurons.at(i)->addConnection(_neurons.at(rand() % NUM_NEUR));
         }
     }
+}
+void Brain::stimulateNeur(int neurIndex, long time)
+{
+    _neurons.at(neurIndex)->release(time);
+}
+double Brain::readNeur(int neurIndex)
+{
+    return _neurons.at(neurIndex)->getPol();
 }

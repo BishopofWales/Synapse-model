@@ -12,7 +12,6 @@ Neuron::Neuron()
     _polarL = 0;
     _lastStimmed = 0;
     _numCons = 0;
-    //cout << "Made a new neuron!\n";
 }
 
 void Neuron::stimulate(long time)
@@ -25,6 +24,10 @@ void Neuron::stimulate(long time)
     {
         release(time);
     }
+}
+double Neuron::getPol()
+{
+    return _polarL;
 }
 void Neuron::release(long time)
 {

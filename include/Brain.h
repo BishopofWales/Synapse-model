@@ -4,7 +4,7 @@
 #include <math.h>
 #include <algorithm>
 #include <array>
-#include <Neuron.h>
+#include "Neuron.h"
 class Brain
 {
   private:
@@ -15,5 +15,7 @@ class Brain
 
   public:
     Brain();
+    void stimulateNeur(int neurIndex, long time);
+    double readNeur(int neurIndex);
 };
 #endif
