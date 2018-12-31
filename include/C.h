@@ -5,5 +5,6 @@ class C
 {
 public:
   static const int MAX_GEOM = 100;
+  static const int CLASS_SIZE = 30;
 };
 #endif

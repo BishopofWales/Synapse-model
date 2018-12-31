@@ -5,9 +5,10 @@
 class Grader
 {
 private:
-  std::array<Lizard *, 10> _lizards;
+  std::array<Lizard *, C::CLASS_SIZE> _lizards;
 
 public:
   Grader();
+  void getResults(std::array<Lizard *, C::CLASS_SIZE> *);
 };
 #endif

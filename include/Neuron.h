@@ -13,6 +13,7 @@ private:
   double _polarL;
   long _lastStimmed;
   int _numCons;
+  bool _hasFired;
 
 public:
   Neuron();
@@ -20,5 +21,6 @@ public:
   void release(long time);
   bool addConnection(Neuron *);
   double getPol();
+  bool readFired();
 };
 #endif

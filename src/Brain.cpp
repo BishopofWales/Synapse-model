@@ -27,7 +27,7 @@ void Brain::stimulateNeur(int neurIndex, long time)
 {
     _neurons.at(neurIndex)->release(time);
 }
-double Brain::readNeur(int neurIndex)
+bool Brain::readNeur(int neurIndex)
 {
-    return _neurons.at(neurIndex)->getPol();
+    return _neurons.at(neurIndex)->readFired();
 }

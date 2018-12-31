@@ -14,6 +14,6 @@ private:
 public:
   Brain();
   void stimulateNeur(int neurIndex, long time);
-  double readNeur(int neurIndex);
+  bool readNeur(int neurIndex);
 };
 #endif

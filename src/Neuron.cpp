@@ -14,6 +14,7 @@ Neuron::Neuron()
     _polarL = 0;
     _lastStimmed = 0;
     _numCons = 0;
+    _hasFired = false;
 }
 
 void Neuron::stimulate(long time)
@@ -26,6 +27,15 @@ void Neuron::stimulate(long time)
     {
         release(time);
     }
+}
+bool Neuron::readFired()
+{
+    if (_hasFired)
+    {
+        _hasFired = false;
+        return true;
+    }
+    return false;
 }
 double Neuron::getPol()
 {
@@ -41,6 +51,7 @@ void Neuron::release(long time)
     }
     //Stim reset goes after, in order to prevent cyclical stimulation
     _polarL = 0;
+    _hasFired = true;
 }
 bool Neuron::addConnection(Neuron *newCon)
 {
