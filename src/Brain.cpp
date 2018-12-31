@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Brain.h"
-
+#include <math.h>
+#include <algorithm>
 using namespace std;
 
 Brain::Brain()

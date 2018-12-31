@@ -1,5 +1,9 @@
 #include <iostream>
+#include "C.h"
+#include "Raycast.h"
 #include "Lizard.h"
+#include <math.h>
+
 using namespace std;
 const float Lizard::LIN_SPD = 5.0;        // m/s
 const float Lizard::ANG_SPD = M_PI / 2.0; //rad/s

@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Neuron.h"
+#include <math.h>
+#include <algorithm>
 
 using namespace std;
 

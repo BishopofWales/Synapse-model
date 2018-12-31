@@ -1,8 +1,6 @@
 #ifndef NEURON_H
 #define NEURON_H
-#include <iostream>
-#include <math.h>
-#include <algorithm>
+
 #include <array>
 class Neuron
 {
