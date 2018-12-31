@@ -17,5 +17,4 @@ int main()
     geom.at(0) = new Circle(10, 20, 0);
     Lizard *newLiz = new Lizard(0.0, 0.0, 0.0 + PI / 4);
     newLiz->proccessInput(geom, 1);
-    //Brain *brain = new Brain();
 }
