@@ -3,6 +3,7 @@
 #define _USE_MATH_DEFINES
 #include "Brain.h"
 #include "Circle.h"
+#include "C.h"
 
 class Lizard
 {

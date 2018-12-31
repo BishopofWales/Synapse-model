@@ -5,10 +5,7 @@
 class Grader
 {
 private:
-  static const int NUM_NEUR = 20;
-  static const int INI_CON = 5;
-
-  std::array<Lizard *, NUM_NEUR> _neurons;
+  std::array<Lizard *, 10> _lizards;
 
 public:
   Grader();
